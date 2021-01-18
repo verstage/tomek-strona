@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,700;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	box-sizing: border-box;
+	// scroll-behavior: smooth;
+}
+/*Variables*/
+$primary-color: #cc6cd9;
+$secondary-color: #976fbf;
+$third-color: #7668a6;
+$light-bg: #f0f1f2;
+$dark-bg: #323c40;
+$text-color-light: #fff;
+$text-color-dark: #000;
+$transision-ease: 0.3s ease-in-out;
+
+$button-border-light: rgba(201, 201, 201, 0.4);
+$button-border-dark: #000;
+
+/*Classes universal*/
+.text-align-center {
+	text-align: center;
+}
+.text-color-light {
+	color: $text-color-light;
+}
+.text-color-dark {
+	color: $text-color-dark;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	column-gap: 1rem;
+	row-gap: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: $primary-color;
+}
+
+a:hover {
+	color: $secondary-color;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-bold {
+	font-weight: 600;
+}
+
+hr {
+	border: 1px solid $text-color-light;
+	border-radius: 10%;
+}
+
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2.5rem;
+}
+h3 {
+	font-size: 2rem;
+}
+
+.card {
+	position: relative;
+	width: auto;
+	height: auto;
+	border: 3px solid $text-color-dark;
+	border-radius: 10px;
+	justify-self: center;
+	padding: 20px;
+	box-shadow: -2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+	top: 0;
+	right: 0;
+	transition: $transision-ease;
+}
+.card:hover {
+	top: -5px;
+	right: -5px;
+	box-shadow: -8px 12px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+@import "home";
+@import "buttons";
