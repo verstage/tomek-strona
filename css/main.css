@@ -128,7 +128,7 @@ body {
 .upbar {
   background-color: #000;
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   max-height: 6.5vh;
   min-height: 6.5vh;
 }
@@ -137,6 +137,9 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
@@ -393,7 +396,7 @@ body {
 }
 
 .showcase .bg-gradient .check-for-more {
-  margin-top: 150px;
+  margin-top: 9rem;
 }
 
 .showcase .bg-gradient .check-for-more a {
@@ -706,6 +709,9 @@ footer .copy {
     font-size: 14px;
   }
   /*Navbar*/
+  .upbar {
+    max-height: 7rem;
+  }
   .navbar {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -724,6 +730,9 @@ footer .copy {
   }
   #mobile-menu-container {
     display: block;
+  }
+  .showcase .check-for-more {
+    margin-top: 3rem;
   }
   .container-what-i-am-doing .container-grid {
     padding: 8rem 3rem;

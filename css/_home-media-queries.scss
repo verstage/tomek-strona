@@ -4,6 +4,9 @@
 	}
 
 	/*Navbar*/
+	.upbar {
+		max-height: 7rem;
+	}
 	.navbar {
 		justify-content: space-around;
 		.logo {
@@ -26,6 +29,11 @@
 		display: block;
 	}
 	//Showcase
+	.showcase {
+		.check-for-more {
+			margin-top: 3rem;
+		}
+	}
 
 	//what-i-am-doing
 	.container-what-i-am-doing {
