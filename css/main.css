@@ -129,8 +129,8 @@ body {
   background-color: #000;
   width: 100%;
   padding: 0.5rem;
-  max-height: 5vh;
-  min-height: 5vh;
+  max-height: 6.5vh;
+  min-height: 6.5vh;
 }
 
 .upbar .upbar-container {
@@ -711,7 +711,7 @@ footer .copy {
         justify-content: space-around;
   }
   .navbar .logo #logo-img {
-    height: 8rem;
+    height: 6rem;
   }
   .navbar nav {
     overflow-y: visible;
