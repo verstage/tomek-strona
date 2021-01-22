@@ -4,6 +4,7 @@
 	padding: 0;
 	font-size: 16px;
 	box-sizing: border-box;
+
 	// scroll-behavior: smooth;
 }
 /*Variables*/
@@ -12,9 +13,11 @@ $secondary-color: #976fbf;
 $third-color: #7668a6;
 $light-bg: #f0f1f2;
 $dark-bg: #323c40;
+$mobile-menu-dark-bg: #323c40ee;
 $text-color-light: #fff;
 $text-color-dark: #000;
 $transision-ease: 0.3s ease-in-out;
+$transition-mobile-menu-slide: 0.4s ease-out;
 
 $button-border-light: rgba(201, 201, 201, 0.4);
 $button-border-dark: #000;
@@ -94,6 +97,14 @@ h3 {
 	top: -5px;
 	right: -5px;
 	box-shadow: -8px 12px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+// Sticky property for nav-bar
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: $transision-ease;
 }
 
 @import "home";
