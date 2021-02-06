@@ -106,6 +106,10 @@ h3 {
 	width: 100%;
 	transition: $transision-ease;
 }
+.sticky + .content {
+	padding-top: 15vh;
+}
 
 @import "home";
 @import "buttons";
+@import "uslugi";

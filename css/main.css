@@ -117,6 +117,10 @@ h3 {
   transition: 0.3s ease-in-out;
 }
 
+.sticky + .content {
+  padding-top: 15vh;
+}
+
 body {
   background-color: #f0f1f2;
   width: 100%;
@@ -938,5 +942,118 @@ footer .copy {
   100% {
     background-position: 0% 0%;
   }
+}
+
+.main-uslugi {
+  width: 100%;
+  height: 100%;
+}
+
+.sticky + .main-uslugi {
+  padding-top: 15vh;
+}
+
+.header-uslugi {
+  color: #000;
+}
+
+.car-modules {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  margin: 3rem 0rem;
+}
+
+.car-modules .module {
+  width: 80%;
+}
+
+.car-modules .module .button-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 1rem;
+  background-color: #f0f1f2;
+  border: 3px solid #000;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: -2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+  z-index: 1;
+  font-size: 2.5rem;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.car-modules .module .button-services .service-img {
+  width: 3rem;
+}
+
+.car-modules .module .button-services span {
+  font-size: inherit;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.car-modules .module .button-services i {
+  font-size: 1.8rem;
+}
+
+.car-modules .module .active-button {
+  background-color: #7668a6;
+  color: #fff;
+}
+
+.car-modules .module .module-services {
+  display: block;
+  max-height: 0rem;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.car-modules .module .module-services .module-services-list {
+  width: 100%;
+  opacity: 1;
+  list-style-type: none;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
+.car-modules .module .module-services .module-services-list .module-services-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.car-modules .module .module-services .module-services-list .module-services-list-item .price {
+  font-weight: 600;
+}
+
+.car-modules .module .module-services .module-services-list .module-services-list-item .service {
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */

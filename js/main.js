@@ -3,6 +3,7 @@
     //Stiky nav-bar
 
     //When user srcoll the page, execute function
+    const upbar = document.getElementById("upbar");
     const navbar = document.getElementById("navbar");
     const main = document.getElementById("main");
     const sticky = navbar.offsetTop;
@@ -10,6 +11,7 @@
     function stickyClassFunction() {
         if(window.pageYOffset >= sticky) {
             navbar.classList.add("sticky");
+            
             
         } else {
             navbar.classList.remove("sticky");
@@ -53,3 +55,7 @@ $('.scrollTo').on('click', function(e) {
         }, 1000);
     }
 });
+
+
+
+ 
