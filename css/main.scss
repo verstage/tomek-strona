@@ -106,7 +106,7 @@ h3 {
 	width: 100%;
 	transition: $transision-ease;
 }
-.sticky + .content {
+.sticky ~ .content {
 	padding-top: 15vh;
 }
 
