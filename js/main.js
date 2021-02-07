@@ -41,7 +41,7 @@ const mobileMenuSlide = (e) => {
         
     } else {
         
-        gsap.fromTo(mobileMenuContainer, {right: "0%"}, {right: "-100%", duration: 1, onComplete: () => {
+        gsap.fromTo(mobileMenuContainer, {right: "0%"}, {right: "-100%", duration: .5, onComplete: () => {
             mobileMenuContainer.classList.replace("active", "inactive");
         }});
     }
