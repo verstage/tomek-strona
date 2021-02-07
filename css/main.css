@@ -117,7 +117,7 @@ h3 {
   transition: 0.3s ease-in-out;
 }
 
-.sticky + .content {
+.sticky ~ .content {
   padding-top: 15vh;
 }
 
@@ -255,26 +255,19 @@ body {
 }
 
 #mobile-menu-container {
-  display: none;
   width: 50%;
   height: 100vh;
   background-color: #323c40ee;
-  z-index: 1000;
+  z-index: 10000;
   position: absolute;
   top: 0vh;
   right: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 0.4s ease-out;
-  transition: -webkit-transform 0.4s ease-out;
-  transition: transform 0.4s ease-out;
-  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
 }
 
 #mobile-menu-container .close-icon {
   cursor: pointer;
-  text-align: right;
-  margin: 1.4rem;
+  text-align: center;
+  margin: 1.4rem 1.2rem 1.4rem 75%;
 }
 
 #mobile-menu-container .close-icon i {
@@ -313,11 +306,6 @@ body {
   border-bottom: 3px solid #976fbf;
 }
 
-#mobile-menu-container.active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
-
 #mobile-menu-container .quick-contact {
   width: 80%;
   height: 12rem;
@@ -332,6 +320,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
 }
 
 /*Showcase*/
@@ -732,9 +728,6 @@ footer .copy {
   .navbar nav #hamburger {
     display: block;
   }
-  #mobile-menu-container {
-    display: block;
-  }
   .showcase .check-for-more {
     margin-top: 3rem;
   }
@@ -947,10 +940,6 @@ footer .copy {
 .main-uslugi {
   width: 100%;
   height: 100%;
-}
-
-.sticky + .main-uslugi {
-  padding-top: 15vh;
 }
 
 .header-uslugi {

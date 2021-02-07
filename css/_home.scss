@@ -113,21 +113,18 @@ body {
 
 // Mobile Menu
 #mobile-menu-container {
-	display: none;
 	width: 50%;
 	height: 100vh;
 	background-color: $mobile-menu-dark-bg;
-	z-index: 1000;
+	z-index: 10000;
 	position: absolute;
 	top: 0vh;
 	right: 0;
-	transform: translateX(100%);
-	transition: transform $transition-mobile-menu-slide;
 
 	.close-icon {
 		cursor: pointer;
-		text-align: right;
-		margin: 1.4rem;
+		text-align: center;
+		margin: 1.4rem 1.2rem 1.4rem 75%;
 		i {
 			font-size: 2.5rem;
 		}
@@ -156,9 +153,6 @@ body {
 			}
 		}
 	}
-	&.active {
-		transform: translateX(0%);
-	}
 	.quick-contact {
 		width: 80%;
 		height: 12rem;
@@ -168,6 +162,13 @@ body {
 		justify-content: space-around;
 		align-items: center;
 	}
+}
+
+.active {
+	display: block;
+}
+.inactive {
+	display: none;
 }
 
 /*Showcase*/

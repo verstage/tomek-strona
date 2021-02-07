@@ -31,8 +31,20 @@ const hamburger = document.getElementById("hamburger");
 const mobileMenuContainer = document.getElementById("mobile-menu-container");
 const closeIconMobileMenu = document.getElementById("close-icon-mobile-menu");
 
-const mobileMenuSlide = () => {
-    mobileMenuContainer.classList.toggle("active");
+const mobileMenuSlide = (e) => {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    if(mobileMenuContainer.classList.contains("inactive")){
+        mobileMenuContainer.classList.replace("inactive", "active");
+        gsap.fromTo(mobileMenuContainer, {right: "-100%"}, {right: "0%", duration: 0.5});
+        
+    } else {
+        
+        gsap.fromTo(mobileMenuContainer, {right: "0%"}, {right: "-100%", duration: 1, onComplete: () => {
+            mobileMenuContainer.classList.replace("active", "inactive");
+        }});
+    }
 }
 
 hamburger.addEventListener("click", mobileMenuSlide);
