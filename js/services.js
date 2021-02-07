@@ -26,7 +26,7 @@ function toggleServiceVisibility(e){
         
     } else {
         
-        gsap.to(panel, {duration: 0.3, opacity: 1, maxHeight: 150, ease: "expo.out", onComplete: () => {
+        gsap.to(panel, {duration: 0.1, opacity: 1, maxHeight: 150, ease: "expo.out", onComplete: () => {
             icon.innerHTML = '<i class="fas fa-minus-square"></i>';
         }});
         
