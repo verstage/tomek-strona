@@ -1296,7 +1296,7 @@ body {
     margin-bottom: 2rem;
   }
   .paragraph-with-slider .slider {
-    min-width: 1rem;
+    min-width: 20rem;
   }
   .carousel-container {
     width: 20rem;
