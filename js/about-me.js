@@ -1,3 +1,4 @@
+//SLIDER
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll(".carousel-slide img");
 const carouselContainer = document.querySelector(".carousel-container");
@@ -56,3 +57,26 @@ carouselContainer.addEventListener("mouseleave", () => {
     nextBtnDiv.classList.remove("shadow-grey-effect-right");
     console.log("Unhovered");
 });
+
+///////////////////////////////////////////////////////////////////////
+
+const qualificationsCards = document.querySelectorAll(".qualification");
+const fullScreenDiv = document.querySelector(".image");
+const fullScreenContainer = document.querySelector(".fullScreenImages");
+const closeIcon = document.querySelector(".close-image-icon");
+
+for(i=0; i < qualificationsCards.length; i++) {
+    qualificationsCards[i].addEventListener("click", displayImageFullScreen);
+    closeIcon.addEventListener("click", closeFullScreenImage);
+}
+
+function displayImageFullScreen(e) {
+    fullScreenDiv.childNodes[1] = this.childNodes[0];
+    fullScreenDiv.childNodes[2].textContent = this.childNodes[1].textContent;
+    fullScreenContainer.style.display = "block";
+
+}
+
+function closeFullScreenImage(e) {
+    fullScreenContainer.style.display = "none";
+}
