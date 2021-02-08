@@ -1205,6 +1205,14 @@ body {
   border-radius: 8px;
 }
 
+.qualification i {
+  margin-left: 10rem;
+  font-size: 1.3rem;
+  color: #323c40;
+  -webkit-transform: rotateZ(-20deg);
+          transform: rotateZ(-20deg);
+}
+
 .fullScreenImages {
   display: none;
   position: fixed;

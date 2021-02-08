@@ -71,7 +71,18 @@ body {
 		max-height: auto;
 		border-radius: 8px;
 	}
+	i {
+		margin-left: 10rem;
+		font-size: 1.3rem;
+		color: $dark-bg;
+		transform: rotateZ(-20deg);
+	}
 }
+
+// .qualification::after {
+// 	content: '<i class="fas fa-hand-point-up"></i>';
+// 	color: $text-color-dark;
+// }
 
 .fullScreenImages {
 	display: none;
