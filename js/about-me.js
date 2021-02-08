@@ -11,11 +11,12 @@ const nextBtn = document.querySelector('#nextBtn');
 
 //Counter
 let counter = 1;
-let size = carouselImages[1].clientWidth;
+let size = carouselImages[counter].clientWidth;
 
 
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+console.log(size, counter);
 
 //Button Listeners
 
@@ -24,7 +25,7 @@ nextBtn.addEventListener("click", () => {
     carouselSlide.style.transition = "transform 0.4s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    console.log('translateX(' + (-size * counter) + 'px)');
+    console.log('translateX(' + (-size * counter) + 'px)', counter);
     
 });
 prevBtn.addEventListener("click", () => {
