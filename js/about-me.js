@@ -11,7 +11,7 @@ const nextBtn = document.querySelector('#nextBtn');
 
 //Counter
 let counter = 1;
-let size = carouselImages[counter].clientWidth;
+let size = carouselImages[1].clientWidth;
 
 
 
@@ -51,12 +51,12 @@ carouselSlide.addEventListener("transitionend", () => {
 carouselContainer.addEventListener("mouseenter", () => {
     prevBtnDiv.classList.add("shadow-grey-effect-left");
     nextBtnDiv.classList.add("shadow-grey-effect-right");
-    console.log("Hovered");
+    
 });
 carouselContainer.addEventListener("mouseleave", () => {
     prevBtnDiv.classList.remove("shadow-grey-effect-left");
     nextBtnDiv.classList.remove("shadow-grey-effect-right");
-    console.log("Unhovered");
+    
 });
 
 ///////////////////////////////////////////////////////////////////////
