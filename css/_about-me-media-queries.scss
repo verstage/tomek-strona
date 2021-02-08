@@ -1,0 +1,32 @@
+@media only screen and (max-width: 768px) {
+	.paragraph-with-slider {
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		background: linear-gradient(-90deg, $dark-bg 100%, $light-bg 100%);
+
+		.text {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+		.slider {
+			min-width: 1rem;
+		}
+	}
+
+	.carousel-container {
+		width: 20rem;
+	}
+
+	.carousel-slide {
+		img {
+			width: 20rem;
+			max-height: auto;
+		}
+	}
+
+	.qualifications-grid {
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+}
