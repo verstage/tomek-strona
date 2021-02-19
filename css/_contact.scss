@@ -1,0 +1,76 @@
+.main-contact {
+	text-align: center;
+	color: $text-color-dark;
+	width: 100%;
+}
+.contact-me-header {
+	margin-top: 3rem;
+}
+.contact-form {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem auto;
+
+	label {
+		width: 100%;
+	}
+	input {
+		width: 100%;
+		margin-bottom: 1.2rem;
+		padding: 0.6rem 1.2rem;
+	}
+	input::placeholder {
+		font-family: "Poppins", sans-serif;
+	}
+	input,
+	.msg {
+		border: 3px solid rgba($color: #000000, $alpha: 0);
+	}
+	input:focus,
+	.msg:focus {
+		border: 3px solid $secondary-color;
+		border-radius: 10px;
+		transition: all $transision-ease;
+	}
+}
+.form-client-data {
+	.bot-field {
+		display: none;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0rem 1rem;
+}
+.form-client-message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0rem 1rem;
+
+	.msg {
+		width: 100%;
+		max-height: 7rem;
+		resize: vertical;
+		padding: 0.6rem 1.2rem;
+		font-family: inherit;
+	}
+
+	.submit-btn {
+		width: 65%;
+		margin-top: 1rem;
+		padding: 0.6rem 1.2rem;
+		background-color: $secondary-color;
+		color: $text-color-light;
+		box-shadow: -2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+		cursor: pointer;
+	}
+	.submit-btn:hover {
+		background-color: $third-color;
+	}
+}

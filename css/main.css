@@ -1326,4 +1326,132 @@ body {
     width: 70%;
   }
 }
+
+.main-contact {
+  text-align: center;
+  color: #000;
+  width: 100%;
+}
+
+.contact-me-header {
+  margin-top: 3rem;
+}
+
+.contact-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem auto;
+}
+
+.contact-form label {
+  width: 100%;
+}
+
+.contact-form input {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.contact-form input::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form input:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form input::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form input,
+.contact-form .msg {
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.contact-form input:focus,
+.contact-form .msg:focus {
+  border: 3px solid #976fbf;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-client-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0rem 1rem;
+}
+
+.form-client-data .bot-field {
+  display: none;
+}
+
+.form-client-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0rem 1rem;
+}
+
+.form-client-message .msg {
+  width: 100%;
+  max-height: 7rem;
+  resize: vertical;
+  padding: 0.6rem 1.2rem;
+  font-family: inherit;
+}
+
+.form-client-message .submit-btn {
+  width: 65%;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #976fbf;
+  color: #fff;
+  -webkit-box-shadow: -2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: -2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+  cursor: pointer;
+}
+
+.form-client-message .submit-btn:hover {
+  background-color: #7668a6;
+}
 /*# sourceMappingURL=main.css.map */
