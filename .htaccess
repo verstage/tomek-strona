@@ -1,6 +1,8 @@
+#Przekierowanie na bezWWW
+Options +FollowSymLinks
 RewriteEngine on
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{HTTP_HOST} ^www.tomek-strona.netlify.app$ [NC]
+RewriteRule ^(.*)$ http://tomek-strona.netlify.app/$1 [R=301,L]
 
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+#Zmiana domyślnego pliku
+DirectoryIndex /index.html
