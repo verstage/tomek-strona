@@ -4,5 +4,11 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www.tomek-strona.netlify.app$ [NC]
 RewriteRule ^(.*)$ http://tomek-strona.netlify.app/$1 [R=301,L]
 
+#Nieużywanie rozszerzeń w adresach
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
+
 #Zmiana domyślnego pliku
 DirectoryIndex /index.html
