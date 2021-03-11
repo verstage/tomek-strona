@@ -28,7 +28,7 @@
 
 
 
-    <title>Kontakt | Mechanik Zabrze</title>
+    <title>Formularz wysłany!</title>
 
     <meta name="keywords" content="mechanik, Zabrze, sprzęgła, dsg, auto, naprawa aut, samochody, mechanika samochodowa">
     
@@ -116,43 +116,31 @@
         <header class="contact-me-header">
             <h1>Kontakt</h1>
         </header>
-        <form method="POST" class="contact-form" netlify netlify-honeypot="bot-field" data-netlify="true" name="kontakt-form" action="/form-success">
-            <div class="form-client-data">
-                <label class="bot-field" for="bot-field">
-                    Bot-field
-                    <input type="text" name="bot-field" id="bot-field">
-                </label>
-                <label for="first-name">
-                    Imię
-                    <input id="first-name" type="text" name="first-name" placeholder="Wpisz swoje imię" required />
-                </label>
-                <label for="last-name">
-                    Nazwisko
-                    <input id="last-name" type="text" name="last-name" placeholder="Wpisz swoje nazwisko" required/>
-                </label>
-                <label for="email">
-                    Adres e-mail
-                    <input id="email" type="email" name="email" placeholder="Wpisz twój e-mail" required/>
-                </label>
-                <label for="phone">
-                    Telefon
-                    <input id="phone" type="tel" name="phone" placeholder="Podaj nr telefonu (opcjonalnie)"/>
-                </label>
+        <article class="success-msg-container">
+            <div class="success-msg-div">
+                <p class="msg">Dziękujemy za przesłanie formularza!</p>
+                <p class="additional-msg">Jeśli masz dodatkowe pytania lub potrzebujesz skontaktować się bezpośrednio:</p>
+                <div class="contact-forms">
+                    <div class="contact-form contact-form-phone">
+                        <p>Zadzwoń do nas</p>
+                        <a href="tel:502211030">
+                            <i class="fas fa-phone-alt"></i>
+                            502211030
+                        </a>
+                    </div>
+                    <div class="contact-form contact-form-mail">
+                        <p>Napisz do nas</p>
+                        <a href="mailto:kontakt@tom-car-garage.pl">
+                            <i class="fas fa-envelope"></i>
+                            kontakt@tom-car-garage.pl
+                        </a>
+                    </div>
+                </div>
+                <p>
+                    <a href="/"><i class="fas fa-long-arrow-alt-left"></i> Powrót do strony głównej</a>
+                </p>
             </div>
-            <div class="form-client-message">
-                <label for="topic">
-                    Temat
-                    <input id="topic" class="form-topic" type="text" name="topic" placeholder="Wpisz temat wiadomości"/>
-                </label>
-                <label for="msg">
-                    Zapytanie
-                    <textarea class="msg" name="msg" id="msg" placeholder="Wpisz swoje zapytanie/wiadomość" required></textarea>
-                </label>
-                <input class="submit-btn" type="submit" value="Wyślij">
-            </div>
-            
-            
-        </form>
+        </article>
     </main>
     <footer>
         <div class="footer grid">

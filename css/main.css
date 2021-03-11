@@ -1454,4 +1454,88 @@ body {
 .form-client-message .submit-btn:hover {
   background-color: #7668a6;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.success-msg-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0rem;
+}
+
+.success-msg-container .success-msg-div {
+  width: 45%;
+  background-color: #93ffbc;
+  padding: 2rem;
+}
+
+.success-msg-container .success-msg-div .additional-msg {
+  margin-top: 3rem;
+}
+
+.success-msg-container .success-msg-div .contact-forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.success-msg-container .success-msg-div .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  background-color: #f0f1f2;
+}
+
+.success-msg-container .success-msg-div .contact-form-phone {
+  width: 35%;
+}
+
+.success-msg-container .success-msg-div .contact-form-mail {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .success-msg-container {
+    margin: 3rem 0rem;
+  }
+  .success-msg-container .success-msg-div {
+    width: 85%;
+    padding: 1rem;
+  }
+  .success-msg-container .success-msg-div .contact-forms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .success-msg-container .success-msg-div .contact-form {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
