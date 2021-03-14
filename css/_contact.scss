@@ -55,7 +55,7 @@
 
 	.msg {
 		width: 100%;
-		max-height: 7rem;
+		min-height: 9rem;
 		resize: vertical;
 		padding: 0.6rem 1.2rem;
 		font-family: inherit;
@@ -74,3 +74,5 @@
 		background-color: $third-color;
 	}
 }
+
+@import "contact-media-queries";
