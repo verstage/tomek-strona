@@ -271,9 +271,14 @@ body {
           box-shadow: 0px 15px 20px 2px grey;
 }
 
-.navbar .logo #logo-img {
-  max-width: auto;
-  height: 7rem;
+.navbar .logo {
+  max-height: 12vh;
+  width: auto;
+}
+
+.navbar #logo-img {
+  max-height: 12vh;
+  width: auto;
   border-radius: 5%;
 }
 
@@ -784,7 +789,7 @@ footer .copy {
         justify-content: space-around;
   }
   .navbar .logo #logo-img {
-    height: 6rem;
+    max-height: 12vh;
   }
   .navbar nav {
     overflow-y: visible;

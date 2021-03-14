@@ -63,15 +63,18 @@ body {
 	align-items: center;
 	z-index: 2;
 	box-shadow: 0px 15px 20px 2px grey;
+	
 
 	.logo {
-		#logo-img {
-			max-width: auto;
-			height: 7rem;
-			border-radius: 5%;
-		}
+		max-height: 12vh;
+		width: auto;
+		
 	}
-
+	#logo-img {
+		max-height: 12vh;
+		width: auto;
+		border-radius: 5%;
+	}
 	nav {
 		height: 100%;
 		ul {
