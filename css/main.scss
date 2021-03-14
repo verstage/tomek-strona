@@ -110,6 +110,53 @@ h3 {
 	padding-top: 15vh;
 }
 
+
+// Preloader
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: $dark-bg;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	transition: opacity $transision-ease;
+	
+	
+	.preloader-nut-icon {
+		display: flex;
+		animation: preloader 1s ease-in-out infinite;
+		img {
+			width: 7rem;
+			filter: invert(87%) sepia(2%) saturate(113%) hue-rotate(173deg) brightness(113%) contrast(92%);
+		}
+	}
+
+	
+
+}
+
+.preloader-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+.preloader-display-none {
+	display: none;
+}
+
+@keyframes preloader {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(180deg);
+	}
+}
+
 @import "home";
 @import "buttons";
 @import "uslugi";

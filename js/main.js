@@ -1,28 +1,44 @@
 
 //Home page
-    //Stiky nav-bar
 
-    //When user srcoll the page, execute function
-    
-    const navbar = document.getElementById("navbar");
-    const sticky = navbar.offsetTop;
-    
-    function stickyClassFunction() {
-        if(window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-            
-            
-        } else {
-            navbar.classList.remove("sticky");
-        }
-        return ;
+//Preloader
+const preloaderFunction = () => {
+    const preloader = document.querySelector('.preloader');
+    window.addEventListener("load", () => {
+        preloader.classList.add("preloader-hidden");
+        preloader.addEventListener("transitionend", () => {
+            preloader.classList.add("preloader-display-none");
+        });
+    });
+};
+
+preloaderFunction();
+
+
+
+//Stiky nav-bar
+
+//When user srcoll the page, execute function
+
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
+
+function stickyClassFunction() {
+    if(window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        
+        
+    } else {
+        navbar.classList.remove("sticky");
     }
+    return ;
+}
 
-    window.onscroll = function () {
-    stickyClassFunction()
-    return;
-    };
-    /////////////////////////////////////////////////////
+window.onscroll = function () {
+stickyClassFunction()
+return;
+};
+/////////////////////////////////////////////////////
 
     
     
@@ -66,6 +82,7 @@ $('.scrollTo').on('click', function(e) {
         }, 1000);
     }
 });
+
 
 
 
